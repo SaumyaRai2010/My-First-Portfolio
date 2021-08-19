@@ -8,7 +8,7 @@ export default function Topbar({menuOpen,setMenuOpen}) {
                     <a href="#intro" className="logo">genius.</a>
                     <div className="itemContainer">
                         <EmojiPeople className="icon"/>
-                        <span>+42 944 88 762 53</span>
+                        <span>+91 88600 82814</span>
                     </div>
                     <div className="itemContainer">
                         <Mail className="icon"/>

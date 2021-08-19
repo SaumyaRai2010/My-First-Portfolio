@@ -6,7 +6,7 @@ export default function Intro() {
 
     const textRef= useRef();
     useEffect(() => {
-        init(textRef.current, { showCursor: false, strings: ['Web Developer', 'Designer','Programmer','Fitness Expert'] })
+        init(textRef.current, { showCursor: true, backDelay:1000 ,  backSpeed:40 ,strings: ['Web Developer', 'Python Enthusiast','Competitive Programmer','Fitness Expert'] })
     }, []);
     return (
         <div className="intro" id="intro">
@@ -17,9 +17,9 @@ export default function Intro() {
             </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Hey There, I'm</h2>
-                    <h1>Saumya Rai</h1>
-                    <h3>Freelance <span ref={textRef}></span></h3>
+                    <h1>Hello There,</h1>
+                    <h2>Saumya Rai</h2>
+                    <h3> I'm A <span ref={textRef}></span></h3>
                 </div>
                 <a href="#portfolio">
                     <img src="assets/down.png " alt="" />
