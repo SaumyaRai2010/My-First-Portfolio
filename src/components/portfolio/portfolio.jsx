@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from "react";
 import "./portfolio.scss";
+
 import PortfolioList from "../portfolioList/PortfolioList";
 import {featuredPortfolio,webPortfolio,mobilePortfolio,designPortfolio,contentPortfolio} from "../../data"
 
