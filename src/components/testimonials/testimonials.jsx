@@ -9,7 +9,7 @@ export default function Testimonials() {
             "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
           icon: "assets/twitter.png",
           desc:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+            "Saumya is great to work with. We’ve used him on two projects for the MIT Libraries and both times he performed above and beyond expectations. I hope to work with him again in the future!",
         },
         {
           id: 2,
@@ -19,7 +19,7 @@ export default function Testimonials() {
             "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
           icon: "assets/youtube.png",
           desc:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+            "Saumya is one of the best web developers I’ve worked with. He understands the technology, client relationships and I trust him with my most demanding projects. ",
           featured: true,
         },
         {
@@ -30,7 +30,7 @@ export default function Testimonials() {
             "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
           icon: "assets/linkedin.png",
           desc:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+            "Saumya’s commitment to his craft is evident in the consistent high quality of his work. His vast knowledge of CSS is ever-evolving and indispensable! He’s a team player that’s a pleasure to work with.",
         },
       ];
       return (
