@@ -1,7 +1,7 @@
 import React, { useEffect,useState } from "react";
 import "./portfolio.scss";
 
-import PortfolioList from "../portfolioList/PortfolioList";
+import PortfolioList from "../portfolioList/portfolioList";
 import {featuredPortfolio,webPortfolio,mobilePortfolio,designPortfolio,contentPortfolio} from "../../data"
 
 export default function Portfolio() {
