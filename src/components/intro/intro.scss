@@ -1,7 +1,13 @@
 @import "../../global.scss";
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --gradient:linear-gradient(170deg, #250333, #491163,#0a0369
+    ,#000053, #14027c,#8ed9f7);
+    --gradient2:linear-gradient(180deg, #250333, #032a3a,#1e1741);
+}
+
 .intro{
-    background-color: white;
+    background:var(--gradient2);
     display: flex;
 
     @include mobile{
@@ -14,12 +20,14 @@
         .imgContainer{
             width: 700px;
             height: 700px;
-            background-color:#0E4944;
+            background:var(--gradient);
+            background-size: 300%;
+            background-position: left;
+            transition: background-position 1350ms;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            // float: right;
             margin: 20px;
 
             @include mobile{
@@ -36,6 +44,9 @@
             }
         }
  
+    }
+    .imgContainer:hover {
+        background-position: right;
     }
     .right{
         flex:0.5;
@@ -63,24 +74,42 @@
                 }
             }
             h2{
-                font-size: 35px;
+                font-size: 135px;
+                animation: animate 4s linear infinite;
+
                 
 
+            }
+            @keyframes animate {
+                0%,50%
+                {
+                    color: #0E3742;
+                    text-shadow: none;
+                }
+                75%,100%{
+                    color:#0E3742;
+                    text-shadow: 0 0 10px #03bcf4
+
+                }
+                
             }
             h3{
                 font-size: 30px;
                 @include mobile{
                     font-size: 20px;
                 }
+                
                 span{
                     font-size: 30px;
                     color:#0E4944;
+                    animation: animate 4s linear infinite;
                     @include mobile{
                         font-size: 25px;
                     }
                 }
                 .ityped-cursor{
                     animation: blink 1s infinite;
+                    
                 }
                 @keyframes blink {
                     50%{
@@ -97,8 +126,8 @@
             bottom: 10px;
             left: 40%;
             img{
-                width: 30px;
-                animation: arrowBlink 1.4s infinite;
+                width: 100px;
+                animation: arrowBlink 0.7s infinite;
             }
             @keyframes arrowBlink {
                 100%{
