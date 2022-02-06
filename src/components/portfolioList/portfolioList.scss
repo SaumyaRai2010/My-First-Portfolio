@@ -5,6 +5,7 @@
     padding: 7px;
     border-radius: 10px;
     cursor: pointer;
+    color: #1AAEC7;
 
     @include mobile{
         margin-right: 40px;
@@ -12,6 +13,7 @@
     &.active{
         background-color: $mainColor;
         color: blue;
+        transform: scale(1.1);
     }
 }
 
